@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Instance loan</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl-carousel/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="./assets/css/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+    <body>
+        <nav class="is-navbar">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="logo.webp" /></a>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center navigation-links">
+                        <div class="d-none d-lg-inline-block">
+                            <a class=" apply-salary-btn" href="login.html">Apply
+                                Salary
+                                Loan </a>
+                            <a href="tel:+01781991183" class="call-us">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                    <path id="phone-call"
+                                        d="M14.051,5A3.874,3.874,0,0,1,18.1,8.913M14.5,1a7.755,7.755,0,0,1,7.612,7.588m-.957,7.626v2.867a1.914,1.914,0,0,1-2.087,1.911A18.972,18.972,0,0,1,10.8,18.058a18.653,18.653,0,0,1-5.745-5.734A18.889,18.889,0,0,1,2.12,4.039,1.913,1.913,0,0,1,4.025,1.956H6.9A1.914,1.914,0,0,1,8.812,3.6a12.251,12.251,0,0,0,.67,2.685A1.909,1.909,0,0,1,9.052,8.3L7.836,9.515a15.305,15.305,0,0,0,5.745,5.734L14.8,14.035a1.918,1.918,0,0,1,2.02-.43,12.313,12.313,0,0,0,2.691.669,1.912,1.912,0,0,1,1.647,1.94Z"
+                                        transform="translate(-2.112 -1)" fill="#595959" />
+                                </svg>
+                                <span> 01781991183</span>
+                            </a>
+                        </div>
+                        <div class="d-none d-sm-inline-block">
+                            <a class="navigation-login-link" href="">
+                                <svg width="28" height="28" viewBox="0 0 28 28">
+                                    <path id="User"
+                                        d="M182,1243a14,14,0,1,0,14,14,14,14,0,0,0-14-14Zm-12.091,14a12.091,12.091,0,1,1,21.594,7.458,12.231,12.231,0,0,0-6.038-4.7,6.055,6.055,0,0,0,1.625-4.187c0-3.157-2.284-5.727-5.091-5.727s-5.091,2.571-5.091,5.727a6.025,6.025,0,0,0,1.753,4.314,11.338,11.338,0,0,0-5.918,4.894,12.058,12.058,0,0,1-2.835-7.776Zm12.409,2.227c-.349,0-.7.026-1.041.057a3.73,3.73,0,0,1-2.459-3.716c0-2.107,1.425-3.818,3.182-3.818s3.182,1.712,3.182,3.818a3.777,3.777,0,0,1-2.34,3.684C182.668,1259.24,182.494,1259.227,182.318,1259.227Zm-8.156,6.968a9.311,9.311,0,0,1,7.02-4.976,4.931,4.931,0,0,0,.817.077,4.441,4.441,0,0,0,1.053-.121,9.776,9.776,0,0,1,7.115,4.722A12.046,12.046,0,0,1,174.163,1266.195Z"
+                                        transform="translate(-168 -1243)" fill="#595959" fill-rule="evenodd" />
+                                </svg>
+                                <span class="pl-1">Login / Register</span>
+                            </a>
+                        </div>
+    
+                    </div>
+                    <div class="sidebar-menu">
+                        <button onclick="openSideMenu()"
+                            class="hamburger-menu"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+            </div>
+            <!-- side nav start -->
+            <div id="mySidenav" class="sidenav">
+                <div onclick="closeSideMenu()" class="extra-space-navbar"></div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeSideMenu()">
+                    <svg class="pr-1" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
+                        <g id="Close" transform="translate(8.5 14.5)">
+                            <rect id="Area" width="38" height="38" rx="19" transform="translate(-8 -14)" fill="#fff"
+                                stroke="#efefef" stroke-miterlimit="10" stroke-width="1" />
+                            <line id="Line_1" data-name="Line 1" x2="12.667" y2="12.667" transform="translate(4.667 -1.333)"
+                                fill="none" stroke="red" stroke-miterlimit="10" stroke-width="2" />
+                            <line id="Line_3" data-name="Line 3" y1="12.667" x2="12.667" transform="translate(4.667 -1.333)"
+                                fill="none" stroke="red" stroke-miterlimit="10" stroke-width="2" />
+                        </g>
+                    </svg>
+                    Close
+                </a>
+                <div class="side-menu-links">
+                    <div class="d-lg-none">
+                        <a href="tel:+01781991183">
+                            Call us at :
+                            <span class="phone-number">01781991183</span>
+                        </a>
+                    </div>
+                    <div class="d-md-none">
+                        <a href="login.html">Apply Salary
+                            Loan</a>
+                    </div>
+    
+                    <a href="faq.html">FAQ</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms%26condition.html">Terms & conditions</a>
+                    <a class="border-0" href="about-us.html">About Us</a>
+                    <div class="d-sm-none">
+                        <a href="login.html" class="sidebar-login-link">
+                            Login / Registration
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar-footer">
+                    <p>Find us on</p>
+                    <div class=" social-icons">
+                        <a target="_blank" href="">
+                            <svg id="facebook-box-fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path id="Path_2134" data-name="Path 2134" d="M0,0H24V24H0Z" fill="none" />
+                                <path id="Path_2135" data-name="Path 2135"
+                                    d="M15.4,21V14.034h2.333l.349-2.708H15.4V9.6c0-.784.218-1.319,1.342-1.319h1.434V5.857a19.191,19.191,0,0,0-2.09-.107,3.263,3.263,0,0,0-3.482,3.58v2H10.268v2.708h2.338V21H4a1,1,0,0,1-1-1V4A1,1,0,0,1,4,3H20a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1Z"
+                                    fill="#282828" />
+                            </svg>
+                        </a>
+                        <a target="_blank" href="">
+                            <svg id="linkedin-box-fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path id="Path_2138" data-name="Path 2138" d="M0,0H24V24H0Z" fill="none" />
+                                <path id="Path_2139" data-name="Path 2139"
+                                    d="M18.335,18.339H15.67V14.162c0-1-.02-2.278-1.39-2.278-1.389,0-1.6,1.084-1.6,2.2v4.25H10.013V9.75h2.56v1.17h.035a2.812,2.812,0,0,1,2.528-1.387c2.7,0,3.2,1.778,3.2,4.091v4.715ZM7,8.575A1.548,1.548,0,1,1,8.551,7.028,1.546,1.546,0,0,1,7,8.575Zm1.336,9.764H5.666V9.75H8.34v8.589ZM19.67,3H4.329A1.312,1.312,0,0,0,3,4.3V19.7A1.312,1.312,0,0,0,4.328,21H19.666A1.317,1.317,0,0,0,21,19.7V4.3A1.317,1.317,0,0,0,19.666,3h0Z"
+                                    fill="#282828" />
+                            </svg>
+                        </a>
+                        <a target="_blank" href="">
+                            <svg width="35" height="35" viewBox="0 0 48 48">
+                                <g id="Group_296" data-name="Group 296" transform="translate(-1582.83 -7389)">
+                                    <path id="Icon_awesome-youtube" data-name="Icon awesome-youtube"
+                                        d="M28.244,7.556a3.49,3.49,0,0,0-2.456-2.471C23.623,4.5,14.937,4.5,14.937,4.5s-8.685,0-10.851.584A3.49,3.49,0,0,0,1.63,7.556a36.611,36.611,0,0,0-.58,6.729,36.611,36.611,0,0,0,.58,6.729,3.438,3.438,0,0,0,2.456,2.432c2.166.584,10.851.584,10.851.584s8.685,0,10.851-.584a3.438,3.438,0,0,0,2.456-2.432,36.611,36.611,0,0,0,.58-6.729,36.611,36.611,0,0,0-.58-6.729ZM12.1,18.414V10.155l7.259,4.13L12.1,18.414Z"
+                                        fill="#282828" transform="translate(1591.42 7399)" fill="red" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <br>
+                    <p>Download our app</p>
+                    <div class="dwn-app-side-image">
+                        <a target="_blank"
+                            href="https://play.google.com/store/apps/details?id=com.instantsalaries.aleshasolutions">
+                            <img src="assets/images/playstore.webp" alt="">
+                        </a>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <!-- side nav end -->
+        </nav>
+        <!-- ======= nav end ======= -->
+
+                <!-- header start -->
+            <!-- header start -->
+    <header>
+        <div class="content-header">
+            <h1>Terms & Conditions</h1>
+            <span><a href="index.html">Home</a> / terms & condition</span>
+        </div>
+    </header>
+    <!-- header end -->
+        <!-- header end -->
+
+
+        <main id="main">
+                <!-- main start -->
+
+    <main>
+        <div class="container">
+            <div class="terms-condition shadow-sm rounded my-4">
+                <div class="p-4">
+                    <div class="d-flex justify-content-end">
+                        <div>
+                            <small>Effective Date: 26 March 2021</small><br />
+                            <small>v2.0</small>
+                        </div>
+                    </div>
+                    <p class="mt-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                        nihil nobis, corporis deserunt voluptatem unde eveniet, quo
+                        accusantium aperiam fugit, dolore ea assumenda qui amet quae!
+                        Sequi saepe ipsa culpa ipsam natus eos voluptatum nobis ut
+                        totam? Voluptatum saepe sit numquam est exercitationem quaerat
+                        recusandae ducimus doloremque quis. Labore commodi eligendi
+                        nostrum consectetur voluptate totam similique veritatis eaque
+                        saepe exercitationem?
+                    </p>
+                    <hr />
+                    <div class="">
+                        <strong class=" h4 base-color">Instant salary</strong>
+                        <div class="ps-3 mt-2">
+                            <li>A registered member of the platform.</li>
+                            <li>
+                                You need to be employed at any organization of Bangladesh.
+                            </li>
+                            <li>Submit proper and authentic documentation.</li>
+                            <li>Fulfill the applications completely.</li>
+                            <li>HR approval (Regarding salary and credit limit).</li>
+                            <li>
+                                Reference code (investor code for higher credit limit).
+                            </li>
+                            <li>
+                                References (5 references, if none of above is available,
+                                Maximum Limit 10,000).
+                            </li>
+                            <li>Read and accept the terms & conditions attached.</li>
+                        </div>
+                        
+                    </div>
+                    <br />
+                    <div class="">
+                        <strong class=" base-color">CUSTOMER SERVICE AGREEMENT
+                        (Loan)</strong>
+                        <p class="mt-2">
+                            This Customer Service Agreement (Hereinafter referred to as
+                            the “Agreement”) has been made, prepared and executed on this
+                            day (the “Date of Registration”) through Instanatsalaries.com
+                            web/mobile application in Bangladesh.
+                        </p>
+                        <strong class="base-color">BY AND BETWEEN</strong>
+                        <p class="mt-2">
+                            The service provider, (Hereinafter referred to as
+                            “Instanatsalaries.com/Alesha Solutions Limited/Company/FIRST
+                            PARTY”) and Name……………., address: ……………………….. (Hereinafter
+                            referred to as the “Customer/Borrower/SECOND PARTY”), who
+                            applied for the registration by his name (the “Application of
+                            Registration”) and later will apply to the CO-OPERATIVES/MFI
+                            (the “Microfinance Institution”) for the loan.
+                        </p>
+                        <br />
+                    </div>
+                    <div class="">
+                        <strong class=" base-color">NARRATION</strong>
+                        <div class="ol-decimal">
+                            <li>
+                                ‘Instanatsalaries.com’ is a digital platform that works for
+                                the CO-OPERATIVES/MFI to find Customers and provides
+                                services (as specified in this agreement) to the
+                                CO-OPERATIVES/MFI and their Customers through
+                                ‘Instanatsalaries.com’ web/mobile application.
+                            </li>
+                            <li>
+                                A registered Customer who creates an account at
+                                ‘Instanatsalaries.com’ web/mobile application can find a
+                                suitable CO-OPERATIVES/MFI, through the services of
+                                ‘Instanatsalaries.com’ on such terms and conditions as may
+                                be provided in this Agreement.
+                            </li>
+                            <li>
+                                That the Customer is any person who has an intention to
+                                borrow and is registered on the ‘Instanatsalaries.com’ as a
+                                Borrower, of the CO-OPERATIVES/MFI that are duly registered
+                                with the ‘Instanatsalaries.com’.
+                            </li>
+                            <li>
+                                For the purpose of Borrowing, the Customer understands and
+                                accepts that he/she shall register him/her in order to
+                                facilitate borrowing from the CO-OPERATIVES/MFI through
+                                ‘Instanatsalaries.com’.
+                            </li>
+                            <li>
+                                Customer who intends to open an account at
+                                ‘Instanatsalaries.com’ platform:
+                            </li>
+                            <div class="ps-3 list-style-none">
+                                <li>
+                                    5.1. Have created an account with ‘Instanatsalaries.com’
+                                    by giving basic information including name, contact
+                                    numbers, emergency contact numbers, date of birth, email,
+                                    place of residence, chosen password, gender, NID,
+                                    Religion, employment and such other information sought
+                                    for.
+                                </li>
+                                <li>
+                                    5.2. Have registered online by providing personal details
+                                    as mentioned above in Clause 5.1 of the recitals and that
+                                    the Borrower shall pay subscription fee and after service
+                                    additional fees (if necessary) to the
+                                    ‘Instanatsalaries.com’, exclusive of Services Tax and VAT.
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <strong
+                        class="">
+                        NOW THEREFORE, IN CONSIDERATION OF THE MUTUAL PROMISES,
+                        COVENANTS AND CONDITIONS HEREINAFTER SET FORTH, THE RECEIPT AND
+                        SUFFICIENCY OF WHICH IS HEREBY ACKNOWLEDGED, THE PARTIES HERETO
+                        AGREE AS FOLLOWS:
+                    </strong>
+                    <br /><br />
+                    <div class="
+                        mt-2">
+                        <strong>1. DEFINITIONS AND INTERPRETATION</strong>
+                        <p class="mt-1">
+                            In this agreement (including any recitals, annexure, schedules
+                            or exhibits attached thereto) except where the context
+                            otherwise requires, the following words and expressions shall
+                            have the following meaning: -
+                        </p>
+                        <div class="list-style-none">
+                            <li>
+                                1.1. “Borrower” means a Customer whose registration, data
+                                analysis, loan application, verification is completed
+                                through ‘Instanatsalaries.com’ and is a registered Borrower.
+                            </li>
+                            <li>
+                                1.2. “CO-OPERATIVES/MFI” means the Microfinance Institution
+                                with whom 'Alesha Solutions Limited’ do agreement as a
+                                service provider.
+                            </li>
+                            <li>
+                                1.3. “Customer” is an individual who satisfies the following
+                                criteria:
+                            </li>
+                            <div class="my-1 ms-4 list-style-type-disc">
+                                <li>Bangladeshi resident.</li>
+                                <li>Above the age of 18 years.</li>
+                                <li>Should be an Earning/eligible Member.</li>
+                                <li>
+                                    Have a NID/birth certificate issued by Bangladesh
+                                    government authority.
+                                </li>
+                                <li>Have income/reference proof.</li>
+                                <li>Have residence proof (Utility bill).</li>
+                                <li>
+                                    Have a valid personal bKash/Nagad/MFS/bank account/valid
+                                    medium.
+                                </li>
+                                <li>Photograph</li>
+                            </div>
+                            <li>
+                                1.5. “Scanned Document” means, ``Customers shall scan and
+                                store documents in a digital format in the form of
+                                electronic documents from the best possible device as
+                                permitted by law; the scanned documents must remain
+                                accessible and legible.
+                            </li>
+                            <li>
+                                1.6. “Photographs” mean Digital photographs which are stored
+                                inside the web/mobile application.
+                            </li>
+                            <li>
+                                1.7. “SMS” means one unit of the Short Message Service
+                                defined.
+                            </li>
+                            <li>
+                                1.8. “Transactional alert/message” means any alert/message,
+                                which is not promotional.
+                            </li>
+                            <li>
+                                1.9. “Rating” means rating given by ‘Instanatsalaries.com’
+                                based on its proprietary algorithm which is calculated on
+                                the basis of Credit rating of an individual based on the
+                                computed credit score.
+                            </li>
+                            <li>
+                                1.10. “Person” means an individual or a company/firm or
+                                financial institution registered as per rule.
+                            </li>
+                            <li>
+                                1.11. “Bank” means the bank account details provided by
+                                Customer in this agreement with details of bank branch; full
+                                address and account number, where Customer maintains its
+                                account, the said bank account details provided by Customer
+                                in the Instanatsalaries.com under this agreement.
+                            </li>
+                            <li>
+                                1.12. “MFS” means the Mobile Financial Service including
+                                bKash/Nagad/Rocket and any other mobile banking organization
+                                etc.
+                            </li>
+                            <li>
+                                1.13. “NID” means a 13-digit or 10-digit (for smart card)
+                                unique identification number issued by the government of
+                                Bangladesh to every individual resident of Bangladesh based
+                                on their biometric and demographic data.
+                            </li>
+                            <li>
+                                1.14. “TIN” means a unique, 12-character numeric identifier,
+                                issued to all individuals and legal entities identifiable
+                                under the Income Tax Ordinance 1984. It is issued by the
+                                National Board of Revenue Bangladesh under the supervision
+                                of the Government of Bangladesh.
+                            </li>
+                            <li>
+                                1.15. “Subscription fee” means the rate at which the
+                                CO-OPERATIVES/MFI shall compute and apply fee on the
+                                membership, as per the terms and conditions of the Loan
+                                Agreement.
+                            </li>
+                            <li>
+                                1.16. “Month” means a month of a year as per the calendar
+                                year and each month shall begin on the first day of such
+                                month.
+                            </li>
+                            <li>
+                                1.17. “Law” includes any constitution, statute, law, rule,
+                                regulation, ordinance, judgement, order, decree,
+                                authorization, or any published directive, guideline,
+                                requirement or governmental restriction having the force of
+                                law, or any determination by, or interpretation of any of
+                                the foregoing by, any judicial authority, whether in effect
+                                as of the date of the Application Form(s) or thereafter and
+                                each as amended from time to time;
+                            </li>
+                            <li>
+                                1.18. “Loan Amount” means the amount of the financial
+                                assistance provided under the Loan Agreement to be executed
+                                between Customer and CO-OPERATIVES/MFI.
+                            </li>
+                            <li>
+                                1.19. “Disbursement” means any payment of the Loan Amount,
+                                or any part thereof, made by CO-OPERATIVES/MFI in terms of
+                                Loan Agreement. All disbursements to be made by
+                                CO-OPERATIVES/MFI under or in terms of this Agreement shall
+                                be in the name of the Customer or Borrower, and shall be
+                                made by way of mobile banking transfer or any other mode
+                                i.e. RTGS, BEFTN, direct transfer, etc., at the sole
+                                discretion of CO-OPERATIVES/MFI;
+                            </li>
+                            <li>
+                                1.20. “Disbursement of Funded amount” means the amount which
+                                ‘Instanatsalaries.com’ has approved after scrutinizing the
+                                credit score/worthiness of the Registered Customer. The same
+                                amount disbursed after receiving or deducting the service
+                                fees and any other charges towards such disbursement of
+                                approved amount.
+                            </li>
+                            <li>
+                                1.20. “Disbursement of Funded amount” means the amount which
+                                ‘Instanatsalaries.com’ has approved after scrutinizing the
+                                credit score/worthiness of the Registered Customer. The same
+                                amount disbursed after receiving or deducting the service
+                                fees and any other charges towards such disbursement of
+                                approved amount.
+                            </li>
+                            <li>
+                                1.21. “RTGS” means (Real Time Gross Settlement) an
+                                electronic form of amount/funds transfer where the
+                                transmission takes place on a real time basis. The
+                                beneficiary account receives the funds/amount transfer on
+                                Real time basis.
+                            </li>
+                            <li>
+                                1.22. “BEFTN” means (Bangladesh Electronic Funds Transfer
+                                Network) is a Bangladesh system of Electronic Transfer of
+                                money from one bank or bank branch to another. Customers
+                                with Internet banking accounts can use the BEFTN facility to
+                                transfer funds nationwide on their own.
+                            </li>
+                            <li>
+                                1.23. “Customer Dashboard” means the section of the
+                                web/mobile application which can be accessed by the borrower
+                                using only his/her own username and password through which
+                                they can update their details, request loan parts, and view
+                                details of their Portfolio.
+                            </li>
+                            <li>
+                                1.24. “Service fee” means charges/fees based membership
+                                program through ‘Instanatsalaries.com’. All fees and charges
+                                mentioned in the Clause- 26. FEES & CHARGES will add
+                                Services Tax and Vat (if any) and the said fees & charges
+                                are subject to change from time to time.
+                                ’Instanatsalaries.com’ reserves the right to make changes in
+                                the fees & services.
+                            </li>
+                            <li>
+                                1.25. A statutory provision shall include such provision as
+                                from time to time modified or re-enacted or consolidated so
+                                far as such modification or re-enactment or consolidation
+                                applies or is capable of applying to any transactions
+                                entered into hereunder.
+                            </li>
+                            <li>
+                                1.26. Headings in this Agreement are for convenience of
+                                reference only and shall not be used to construe or
+                                interpret this agreement.
+                            </li>
+                            <li>
+                                1.27. Words denoting the singular shall include the plural
+                                and vice versa and the word representing any gender shall be
+                                deemed to include all other genders.
+                            </li>
+                            <li>
+                                1.28. The word 'includes' or 'including' shall be construed
+                                without limitation.
+                            </li>
+                            <li>
+                                1.29. An 'amendment' includes a supplement, modification,
+                                notation, replacement or re-enactment and 'amended' is to be
+                                construed accordingly.
+                            </li>
+                        </div>
+                </div>
+                <div class="mt-4">
+                    <strong>2. COMMENCEMENT</strong>
+                    <p class="mt-1">
+                        This agreement shall come into effect from the date of
+                        execution (the “Date of Registration”) of this agreement by
+                        acceptance of the Customer (the person
+                    </p>
+                </div>
+
+                <div class="mt-4">
+                    <strong>3. PURPOSE/SCOPE OF THIS AGREEMENT</strong>
+
+                    <div class="list-style-roman">
+                        <li>
+                            The Parties duly agree and understand that they have
+                            collaborated with each other for the purposes as expressed
+                            under Para(s) 1-5 to the Recitals.
+                        </li>
+                        <li>
+                            The Customer duly agrees and understands that for the
+                            purposes of effectuating the objective as specified under
+                            RECITAL to this Agreement, the Customer shall register
+                            itself/himself/herself with the ‘Instanatsalaries.com’ in
+                            accordance with the guidelines and as duly specified within
+                            the provision of law;
+                        </li>
+                        <li>
+                            The Customer is associated with the ‘Instanatsalaries.com’
+                            in order to borrow money from the CO-OPERATIVES/MFI, through
+                            the ‘Instanatsalaries.com’.
+                        </li>
+                        <li>
+                            The Customer duly agrees and understands that it shall be
+                            upon the sole discretion of the Company to register a
+                            prospective Customer as an actual Borrower of
+                            CO-OPERATIVES/MFI on the ‘Instanatsalaries.com’ and the
+                            Customer shall cease and desist from raising any
+                            contention/dispute in respect thereof.
+                        </li>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>4. REGISTRATION</strong>
+
+                    <div class="list-style-roman">
+                        <li>
+                            ICustomer agrees to register with ‘Instanatsalaries.com’ as
+                            Borrower. Verification process is mentioned in Clause 5 of
+                            this agreement. Those Customers who applied for the online
+                            registration, should submit the required documents for
+                            verification by ‘Instanatsalaries.com’ through the online
+                            process. This will be completed within the same working day,
+                            the date of Customer’s registration on the mobile
+                            application.
+                        </li>
+                        <li>
+                            The Customer, to register itself/himself/herself with the
+                            ‘Instanatsalaries.com’ shall undergo the registration
+                            process of the ‘Instanatsalaries.com’.
+                        </li>
+                        <li>
+                            ‘Instanatsalaries.com’ Customer hereby agrees to receive SMS
+                            alert posted by ‘Instanatsalaries.com’ on any new
+                            registrations, loan closures, repayments, offers on loans,
+                            etc. registered members are availing these services on their
+                            own will and there will be no financial obligation in case
+                            of legal disputes. The registered members are obliged to
+                            notify ‘Instanatsalaries.com’, any change on his/her mobile
+                            phone number. The registered members are allowed to opt out
+                            from receiving SMS alerts by notifying
+                            ‘Instanatsalaries.com’ in writing through mobile
+                            application.
+                        </li>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>5. AUTHORIZATION FOR VERIFICATION</strong>
+
+                    <div class="list-style-roman">
+                        <li>
+                            On successful completion of execution of this agreement, the
+                            Customers are subject to verification. Verification process
+                            includes online verification to check correctness of data
+                            provided for online registration by the Customer with the
+                            proofs. Customers should provide the list of documents
+                            mentioned above under clause 1.4 at the time of registration
+                            at ‘Instanatsalaries.com’.
+                        </li>
+                        <li>
+                            The Customer shall submit the above mentioned documents in
+                            photo/scanned format in the Personal profile in
+                            ‘Instanatsalaries.com’, which shall be reached only after
+                            successfully registration completes and documents relating
+                            to work experience, Employment Category, Gross Income,
+                            Educational Level, Residence type, Residence Ownership Type,
+                            Permanent Address, and any other document that
+                            ‘Instanatsalaries.com’ deems fit to check;
+                        </li>
+                        <li>
+                            The Customer must provide 02 (Two) emergency contacts or
+                            investor reference or HR referral.
+                        </li>
+                        <li>
+                            Details of the place of employment should be declared by the
+                            Customer according to job category if any and in case of
+                            Business, the Customer shall provide documents related to
+                            the business (e.g. Trade License) of the Customer.
+                        </li>
+                        <li>
+                            The Customer shall provide all the details pertaining to the
+                            Bank/MFS (e.g. bkash, Nagad, Rocket) account through which
+                            the Customer requests the loan amount to be transferred as
+                            Borrower.
+                        </li>
+                        <li>
+                            Additional documents that the Customer needs to provide
+                            shall be: NID Card, TIN, Passport, Photograph of the
+                            Customer as per clause 1.3, 1.4.
+                        </li>
+                        <li>
+                            Customer or Borrower hereby authorizes the
+                            ‘Instanatsalaries.com’ to obtain a credit report (if
+                            necessary) from any third party or such other organization
+                            which provides such facilities not only for the first time
+                            on registration but at any time during his association with
+                            ‘Instanatsalaries.com’. The credit report shall be used for
+                            any purpose that is authorized by applicable law.
+                        </li>
+                        <li>
+                            ‘Instanatsalaries.com’ has the right to reject any
+                            Customer’s application, if any information provided by
+                            Customer is inaccurate or incorrect.
+                        </li>
+                        <li>
+                            If any changes occur in the personal information provided
+                            after registration, Customer must promptly notify within 03
+                            (three) days through message or email to
+                            ‘Instanatsalaries.com’ of the change. In the event of not
+                            notifying, ‘Instanatsalaries.com at its sole discretion may
+                            take necessary action including removing the registration.
+                        </li>
+                        <li>
+                            Customer hereby agrees that documents sought by
+                            ‘Instanatsalaries.com’ at the time of registration or
+                            anytime thereafter become part of the official record of
+                            ‘Instanatsalaries.com’ and will not be returned. However, on
+                            closure of the user account ‘Instanatsalaries.com’ will
+                            ensure that the same is destroyed.
+                        </li>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>6. RE-PAYMENTS & AFTER SERVICE ADDITIONAL FEE</strong>
+
+                    <div class="list-style-roman">
+                        <li>
+                            Customer agrees to pay the principal amount at the repayment
+                            date in the admitted manner to the CO-OPERATIVES/MFI. In the
+                            event of delayed payments, an after service additional fee
+                            is charged by the Instanatsalaries.com, charge based on the
+                            criteria as discussed further.
+                        </li>
+                        <li>
+                            Customer will repay the loan to CO-OPERATIVES/MFI on the
+                            date as mentioned in the personal profile of Customer at
+                            ‘Instanatsalaries.com’. In case the repayment is not paid on
+                            the scheduled time, an after service additional fee will be
+                            charged for each day of delay beginning with the due date up
+                            to the date of actual repayment. So, ‘Instanatsalaries.com’
+                            encourages all Customers/Borrowers to make timely repayments
+                            to avoid additional fees.
+                        </li>
+                        <li>
+                            Please note that, if ‘Instanatsalaries.com’ thinks fit, at
+                            its sole discretion can increase/decrease this amount of
+                            after service additional fee;
+                        </li>
+                        <li>
+                            If, ‘Instanatsalaries.com’ ties up with any bank in the near
+                            future, Customer/Borrower agrees to open a bank account with
+                            ‘Instanatsalaries.com’ designated bank through which the
+                            loan requests will be processed. In such case,
+                            Customer/Borrower agrees to make all loan commitments by
+                            maintaining an account for the said purpose. Till that
+                            period, Customer/Borrower agrees to repay the loan amount
+                            through its personal MFS (e.g. bKash, Nagad, Rocket)
+                            account.
+                        </li>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>7. INSTANATSALARIES.COM’ OBLIGATIONS</strong>
+
+                    <div class="list-style-roman">
+                        <li>
+                            ‘Instanatsalaries.com’ shall provide the above mentioned
+                            services at Clause 1.24 properly and also help the
+                            CO-OPERATIVES/MFI to enable swift and easy transfer of the
+                            loan disbursement amount in the account of the
+                            Customer/Borrower.
+                        </li>
+                        <li>
+                            ‘Instanatsalaries.com’ agrees to engage the services of a
+                            collection on behalf of the CO-OPERATIVES/MFI in collecting
+                            timely payments from the Borrower with
+                            authorization/instructions from CO-OPERATIVES/MFI.
+                            ‘Instanatsalaries.com’ assumes no advisory or fiduciary
+                            responsibility concerning CO-OPERATIVES/MFI in connection
+                            with lending to Borrower, provided all the parties shall
+                            strictly abide by the procedure prescribed under the law.
+                        </li>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>8. NON-AGENT</strong>
+
+                    <div class="list-style-roman">
+                        <li>
+                            ‘Instanatsalaries.com’, the digital platform, shall in no
+                            measures be construed as an agent of either party
+                            (CO-OPERATIVES/MFI or Borrower). ‘Instanatsalaries.com’ is
+                            facilitating a digital platform only which shall not be held
+                            liable for any acts of either Party (CO-OPERATIVES/MFI or
+                            Borrower).
+                        </li>
+                        <li>
+                            Any actions by either Party (CO-OPERATIVES/MFI and Borrower)
+                            shall not be interpreted as an act of ‘Instanatsalaries.com’
+                            or ‘Alesha Solutions Limited’.
+                        </li>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>9. CUSTOMER/BORROWER OBLIGATIONS</strong>
+
+                    <div class="list-style-roman">
+                        <li>
+                            To provide accurate and true information that shall be
+                            sought by the ‘Instanatsalaries.com’ for validating the
+                            information and documents.
+                        </li>
+                        <li>
+                            To repay the loan to the CO-OPERATIVES/MFI without any
+                            failure within the scheduled loan period.
+                        </li>
+                        <li>
+                            To pay the service fee (as invoiced at
+                            ‘Instanatsalaries.com’ web/mobile application for Customer
+                            after his/her service finished) to the
+                            ‘Instanatsalaries.com’ or authorize the CO-OPERATIVES/MFI to
+                            deduct the service fee from the loan amount of the Borrower
+                            before disbursement, and which shall be authorized by the
+                            Borrower through his/her ‘Instanatsalaries.com’ mobile
+                            application.
+                        </li>
+                        <li>
+                            To comply with all the terms of use for the website & mobile
+                            application, privacy policy and as well any other rules or
+                            policies set forth on Instanatsalaries.com’s website &
+                            mobile application, any of which may be amended from time to
+                            time by ‘Instanatsalaries.com’ at its sole discretion.
+                        </li>
+                        <li>
+                            To co-operate with ‘Instanatsalaries.com’ for the
+                            information/documents sought from time to time and shall
+                            inform the ‘Instanatsalaries.com’ if there is any change in
+                            the address or change in the contact number.
+                        </li>
+                        <li>
+                            Customer agrees that, in connection with any loan offers,
+                            loans or other transactions involving or potentially
+                            involving ‘Instanatsalaries.com’, not to
+                        </li>
+                        <div class="ms-3">
+                            <li>
+                                Make any false, misleading or deceptive statements or
+                                omissions of material fact.
+                            </li>
+                            <li>
+                                Misrepresent his identity, or describe, present or portray
+                                himself as a person other than him.
+                            </li>
+                            <li>
+                                Represent himself to any person as a director, officer or
+                                employee of ‘Instanatsalaries.com’ or Alesha Solutions
+                                Limited, unless being so.
+                            </li>
+                            <li>
+                                Post anything abusive, harmful content or pictures; which
+                                is defamatory to ‘Instanatsalaries.com’ or Alesha
+                                Solutions Limited’.
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>10. REPRESENTATIONS AND WARRANTIES</strong>
+                    <p class="mt-1">
+                        Each party to the agreement makes the following
+                        representations and warranties with respect to itself, and
+                        confirms that they are true, correct and valid:
+                    </p>
+                    <div class="list-style-roman">
+                        <li>
+                            It has full power and authority to enter into, deliver and
+                            perform the terms and provisions of this agreement and, in
+                            particular, to exercise its rights, perform the obligations
+                            expressed to be assumed by and make the representations and
+                            warranties made by it hereunder.
+                        </li>
+                        <li>
+                            Its obligations under this agreement are legal and valid
+                            obligations binding on it and enforceable against it in
+                            accordance with the terms hereof.
+                        </li>
+                        <li>
+                            The parties to the agreement warrant and represent to have
+                            the legal competence and capacity to execute and perform
+                            this agreement.
+                        </li>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>11. NO GUARANTEE</strong>
+                    <p class="mt-1">Instanatsalaries.com’ does not guarantee:</p>
+                    <div class="list-style-roman">
+                        <li>
+                            That Customers loan request will be selected by an
+                            CO-OPERATIVES/MFI or;
+                        </li>
+                        <li>
+                            That Customer will receive an CO-OPERATIVES/MFI’s acceptance
+                            for the loan request as a result of application, or;
+                        </li>
+                        <li>
+                            That Customer will receive the loan at any rate of return,
+                            or any minimum amount of principal at all;
+                        </li>
+                    </div>
+                    <p class="mt-1">
+                        The Parties duly agree and understand that the
+                        ‘Instanatsalaries.com’ makes no guarantee as to whether the
+                        Customer/Borrower shall receive a loan/credit upon his/her
+                        application.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <strong>12. RESTRICTIONS ON USE</strong>
+                    <p class="mt-1">
+                        Customer represents itself/himself/herself and no third party.
+                        Customer is not authorized or permitted to use
+                        ‘Instanatsalaries.com’ to make requests for someone other than
+                        itself/himself/herself. All the transactions carried will be
+                        solely by Customer/Borrower from his/her personal bank/MFS
+                        (e.g. bKash, Nagad, Rocket) account.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <strong>13. TERMINATION</strong>
+
+                    <div class="list-style-roman">
+                        <li>
+                            ‘Instanatsalaries.com’ may at its sole discretion, with or
+                            without cause, terminate this agreement and registration
+                            with ‘Instanatsalaries.com’ at any time by giving a notice
+                            to the Customer/Borrower.
+                        </li>
+                        <li>
+                            In case of non- compliance of Customer/Borrower’s
+                            obligations mentioned under Clause 09 above, involvements of
+                            Customer/Borrower in any prohibited activity or illegal
+                            purpose, Customer/Borrower’s failure to abide by the terms
+                            of this agreement or the ‘Instanatsalaries.com’ terms of
+                            service and any law of land. Upon such determination in
+                            connection with registration/loan offer,
+                            ‘Instanatsalaries.com’ may, at its sole discretion,
+                            immediately and without notice, take one or more of the
+                            following act:
+                        </li>
+                        <div class="ms-3">
+                            <li>
+                                Terminate or suspend Customer/Borrower’s application for
+                                loan through the ’Instanatsalaries.com’; or
+                            </li>
+                            <li>
+                                Terminate this Agreement and Customer’s registration with
+                                ‘Instanatsalaries.com’;
+                            </li>
+                            <li>
+                                Upon termination of this agreement and registration with
+                                ‘Instanatsalaries.com’, all the loans originated through
+                                ‘Instanatsalaries.com’ still hold good as the agreements
+                                are legal and signed by the Borrower & CO-OPERATIVES/MFI;
+                            </li>
+                        </div>
+                        <li>
+                            The Parties duly agree and understand that the
+                            ‘Instanatsalaries.com’ may at its sole discretion, with or
+                            without cause, terminate this Agreement and the Registration
+                            of the Customer with the Company at any time by giving a
+                            notice or notification at web/mobile application of such
+                            intent to the Customer;
+                        </li>
+                        <li>
+                            The parties duly agree that the Company has sole authority
+                            to determine the non- compliance of the Customers
+                            obligations as expressed under Clause- 9 herein, involvement
+                            of the Customer in any prohibited activity or illegal
+                            purpose, Customer’s failure to abide by the terms of this
+                            Agreement or the Company’s terms of service and any law of
+                            land. Upon such determination, the Company may, at its sole
+                            discretion, immediately and without notice, cancel the
+                            provision of loan/credit facility and/or terminate the
+                            Customer’s right to apply or otherwise participate in the
+                            ‘Instanatsalaries.com’ and/or terminate this Agreement;
+                        </li>
+                        <li>
+                            The Parties duly agree and understand that upon termination
+                            of this Agreement and registration with the Company, all
+                            loan/credit originated by CO-OPERATIVES/MFI through the
+                            ‘Instanatsalaries.com’ still hold good as the Agreement
+                            executed herein is legal and signed by the Borrower and
+                            CO-OPERATIVES/MFI without any coercion and it shall be
+                            legally enforceable.
+                        </li>
+                        <li>
+                            The Customer or Borrower duly agree that, after the
+                            termination of this agreement, the borrower shall be bound
+                            to pay the service fees/after service additional fee to the
+                            Instanatsalaries.com if required before the termination.
+                        </li>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>14. THIRD PARTY DISCLOSURES</strong>
+                    <p class="mt-1">
+                        The Customer hereby agrees and explicitly consents that
+                        ‘Instanatsalaries.com’ may disclose confidential information
+                        of the Customer to any third party who under the terms of this
+                        agreement have rights or any other Governmental Regulatory
+                        Body and law enforcing agency who needs to access such
+                        information in pursuance of any functions, duties and laws
+                        with regards to this Agreement.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <strong>15. INSTANATSALARIES.COM'S RIGHT TO MODIFY TERMS</strong>
+
+                    <div class="list-style-roman">
+                        <li>
+                            ‘Instanatsalaries.com’ reserves the right to modify the
+                            clauses of the agreement or its terms of service from time
+                            to time without consent of Customer due to any of the
+                            following reasons:
+                        </li>
+                        <div class="ms-3">
+                            <li>
+                                To make these Customer Terms and Conditions clearer or
+                                easier to understand;
+                            </li>
+                            <li>
+                                To make changes which benefit Customer or do not
+                                disadvantage Customer;
+                            </li>
+                            <li>
+                                To make changes to the products or services we offer or
+                                provide to the Customer, to introduce new products or
+                                services or to withdraw products or services
+                                ‘Instanatsalaries.com’/Company no longer offers;
+                            </li>
+                            <li>
+                                To change our existing services because of changes to
+                                technology, systems, processes or our business policies or
+                                procedures;
+                            </li>
+                            <li>
+                                To reflect changes in law, regulation, industry guidance
+                                or a decision of a competent court or any regulation
+                                framed by the regulatory from time to time;
+                            </li>
+                        </div>
+                        <li>
+                            ‘Instanatsalaries.com’ will always try to give at least one
+                            month's notice of modification/amendment to this Customer
+                            Agreement by notifying the Customer of the proposed change
+                            through the Website & web/mobile application or sending an
+                            email to Borrower’s registered email address (if available).
+                            However, this may not always be possible and
+                            ‘Instanatsalaries.com’ may make changes on shorter notice
+                            periods. Changes will not apply retrospectively. Changes to
+                            the terms of service will become effective no sooner than
+                            two days after they are modified. ‘Instanatsalaries.com’
+                            will give Customer notice of material changes to this
+                            agreement, within 30 working days.
+                        </li>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>16. CEASING TO BE A CUSTOMER WITH ‘INSTANATSALARIES.COM’ AND
+                        TERMINATION</strong>
+
+                    <div class="list-style-roman">
+                        <li>
+                            I. In case, a Customer no longer wishes to be a
+                            ‘Instanatsalaries.com’ Customer then, provided that, the
+                            Customer has:
+                        </li>
+                        <div class="ms-3">
+                            <li>No Loan Agreements in force;</li>
+                            <li>No Loan Agreements with CO-OPERATIVES/MFI in force;</li>
+                            <li>No outstanding dues in his/ her account;</li>
+                            <li>
+                                No dues regarding service and after service additional
+                                fees;
+                            </li>
+                        </div>
+                        <li>
+                            Customers can notify us at any time ‘Instanatsalaries.com’
+                            will close your Customer Account.
+                        </li>
+                        <li>
+                            If a Registered Customer wishes to close his/her Customer
+                            Account but the following circumstances apply:
+                        </li>
+                        <div class="ms-3">
+                            <li>
+                                Customer/Borrower is a party to a Loan Agreement which is
+                                in force or;
+                            </li>
+                            <li>
+                                Customer/Borrower has active loans in his account; or
+                            </li>
+                            <li>Customer/Borrower has an active loan application;</li>
+                        </div>
+                        <li>
+                            Customer/Borrower must either (depending on the
+                            circumstances below mentioned):
+                        </li>
+                        <div class="ms-3">
+                            <li>Repay all loan repayment and due (if any); or</li>
+                            <li>
+                                Cancel his/her application from the
+                                ‘Instanatsalaries.com’;
+                            </li>
+                        </div>
+                        <li>
+                            ‘Instanatsalaries.com’ may give Customer notice that
+                            ‘Instanatsalaries.com’ intend to close your Customer Account
+                            at any time if:
+                        </li>
+                        <div class="ms-3">
+                            <li>
+                                Customer breaches any term of this Customer Service
+                                Agreement, Terms and Conditions and the Privacy Policy;
+                            </li>
+                            <li>
+                                Customer/Borrower breaches any term of a Loan Agreement
+                                and fail to remedy the breach within any reasonable period
+                                notified to Borrower;
+                            </li>
+                            <li>
+                                Customer ceases to be an eligible Customer because
+                                Customer does not satisfy the criteria as per Terms and
+                                Conditions of this Customer Service Agreement.
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>17. INDEMNIFICATION</strong>
+                    <p class="mt-1">
+                        Customer agrees to indemnify and hold ‘Instanatsalaries.com’
+                        harmless from and against any and all claims, action,
+                        liability, cost, loss, damage, endured by
+                        ‘Instanatsalaries.com’ by Customer's access in violation to
+                        the listed terms of service and also to the applicable laws,
+                        rules and regulations or agreements prevailing from time to
+                        time. Cost or expense also includes and is not limited to
+                        reminder fees, attorney fees, notary fees, appraisal fees,
+                        legal fees, transportation fees, investigation cost etc.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <strong>18. SEVERABILITY</strong>
+                    <p class="mt-1">
+                        If any provision of this agreement is found to be invalid or
+                        unenforceable, then the invalid or unenforceable provision
+                        will be deemed superseded by a valid enforceable provision
+                        that most closely matches the intent of the original provision
+                        and the remainder of the agreement shall continue in effect.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <strong>19. INTELLECTUAL PROPERTY RIGHTS</strong>
+                    <p class="mt-1">
+                        ‘Instanatsalaries.com’ and all related logos (collectively the
+                        "‘Instanatsalaries.com’ trademarks") are trademarks or service
+                        marks of ‘Instanatsalaries.com’. Nothing on this site should
+                        be construed as granting, by implication, estoppel, or
+                        otherwise, any license or right to use any of
+                        ‘Instanatsalaries.com’ trademarks displayed on this site,
+                        without our prior written permission in each instance.
+                        Customers should not use, copy, display, distribute, modify or
+                        reproduce any of the trademarks found on the site unless in
+                        accordance with written authorization by us.
+                        ‘Instanatsalaries.com’ prohibits use of any of
+                        Instanatsalaries.com’s trademarks as part of a link to or from
+                        any site unless establishment of such a link is approved in
+                        writing by ‘Instanatsalaries.com’ in advance.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <strong>20. NOTICES</strong>
+                    <p class="mt-1">
+                        All notices and other communications hereunder shall be given
+                        by notification at ‘Instanatsalaries.com’ application or email
+                        to Customer’s registered email address (if any) and wherever
+                        possible, posted on ‘Instanatsalaries.com’s website & mobile
+                        application. Customers may request ‘Instanatsalaries.com’ to
+                        send the correspondence through post, for which Customer must
+                        bear the expenditure. For effective communication, Customer
+                        agrees to notify any changes in the communication details i.e.
+                        mailing address, contact details, email-id by sending an email
+                        at care@instanatsalaries.com
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <strong>21. ERRORS</strong>
+                    <p class="mt-1">
+                        Customer authorizes ‘Instanatsalaries.com’ to correct obvious
+                        clerical errors appearing in information he/she provides to
+                        ‘Instanatsalaries.com’, without notice to him/her; although,
+                        ‘Instanatsalaries.com’ expressly undertakes no obligation to
+                        identify or correct such errors.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <strong>22. GOVERNING LAW, DISPUTE RESOLUTION AND
+                        JURISDICTION</strong>
+                    <div class="list-style-roman">
+                        <li>
+                            Any and all disputes or differences between Customer and
+                            ‘Instanatsalaries.com’ the Company, arising out of or in
+                            connection with this agreement or its performance shall, so
+                            far as it is possible, be settled by negotiations between
+                            the parties amicably through consultation.
+                        </li>
+                        <li>
+                            Any dispute, which could not be settled by the parties
+                            through amicable settlement, shall be finally settled by the
+                            arbitration or court of law having jurisdiction to grant the
+                            same. The Jurisdiction shall be that of Dhaka, Bangladesh.
+                        </li>
+                        <li>
+                            This agreement and the arrangements contemplated hereby
+                            shall in all respects be governed by and construed in
+                            accordance with the laws of Bangladesh without giving effect
+                            to the principles of conflict of laws there under.
+                        </li>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>23. FORCE MAJEURE</strong>
+                    <div class="list-style-roman">
+                        <li>
+                            No Party shall be liable to the other if, and to the extent,
+                            that the performance or delay in performance of any of its
+                            obligations under this agreement is prevented, restricted,
+                            delayed or interfered with, due to circumstances beyond the
+                            reasonable control of such party, including but not limited
+                            to, Government legislations, fires, floods, explosions,
+                            epidemics, accidents, acts of God, wars, riots, strikes,
+                            lockouts, or other concerted acts of workmen, acts of
+                            Government and/or shortages of materials;
+                        </li>
+                        <li>
+                            The party claiming an event of force majeure shall promptly
+                            notify the other parties in writing and provide full
+                            particulars of the cause or event and the date of first
+                            occurrence thereof, as soon as possible after the event and
+                            also keep the other parties informed of any further
+                            developments. The party so affected shall use its best
+                            efforts to remove the cause of non-performance, and the
+                            parties shall resume performance hereunder with the utmost
+                            dispatch when such cause is removed.
+                        </li>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>24. BINDING EFFECT</strong>
+                    <p class="mt-1">
+                        All warranties, undertakings and agreements given herein by
+                        the parties shall be binding upon the parties and upon its
+                        legal representatives. This agreement (together with any
+                        amendments or modifications thereof) supersedes all prior
+                        discussions and agreements (whether oral or written) with
+                        respect to the transaction or electronic, between Customer and
+                        ‘Instanatsalaries.com’ with respect to Customer involvement as
+                        a Customer on the ‘Instanatsalaries.com.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <strong>25. ENTIRE AGREEMENT</strong>
+                    <p class="mt-1">
+                        This agreement, along with the ‘Instanatsalaries.com’ terms
+                        and conditions, represents the entire agreement between
+                        Customer and ‘‘Instanatsalaries.com’ regarding the
+                        participation as a Customer on the ‘Instanatsalaries.com’, and
+                        supersedes all prior or contemporaneous communications,
+                        promises and proposals, whether oral or written.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <strong>26. FEES & CHARGES</strong>
+                    <p class="mt-1">Subscription fee only as per agreed.</p>
+                    <p class="mt-1">
+                        This Customer Service Agreement is made and agreed upon by
+                        both parties in the form of an electronic Agreement and placed
+                        in the Instanatsalaries.com mobile application. This Agreement
+                        is valid and accepted by the Customer's confirmation and
+                        digital signature according to his/her understanding, own will
+                        in the Instanatsalaries.com mobile application. A version of
+                        this Agreement remains stored in the instantsalaries.com is
+                        considered the final proof of dispute settlement and both
+                        parties also agree that if any dispute arises between the
+                        parties, this electronic agreement will be printed and used as
+                        evidence to mitigate the dispute.
+                    </p>
+                    <p class="mt-1">
+                        The Customer/Borrower for the related platform, click on the
+                        “I Agree” button, which means that the Customer has carefully
+                        read the entire terms and conditions of this Agreement and has
+                        no objections.
+                    </p>
+                    <div class="mt-1">
+                        The Customer/Borrower has signified his/her consent to the
+                        terms and conditions of this Agreement by clicking in the
+                        “Agree” button.
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- main end -->
+            </main>
+
+            <!-- ======= Footer ======= -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-2 mb-3 ms-sm-0">
+                            <div class="footer-logo">
+                                <img src="./assets/images/logo.png" alt="">
+                                
+                                    
+                            </div>
+                            <h5 class="footer-header mt-4">Address</h5>
+                            <p class="footer-content">mymensing bhalokber shohagi ishawargonj
+                                mymensingh,
+                                Bangladesh.</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-3 ms-sm-0">
+                            <h5 class="footer-header">Follow Us</h5>
+                            <div class="">
+                                <a target=" _blank" href="https://www.facebook.com/rjmubarok/">
+                                   
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a target="_blank" href="https://www.linkedin.com/rjmubarok">
+                                   
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+        
+                                <a target="_blank" href="https://www.youtube.com/channel/rjmubarok">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                            <p class="footer-content mt-2 mt-sm-5"><strong>Email:</strong> mubarkhossen2003@gmail.com</p>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-12 mb-3 ms-sm-0">
+                            <h5 class="footer-header">Links</h5>
+                            <div class="footer-links">
+                                <a href="">Contact</a>
+                                <a href="">FAQ</a>
+                                <a href="">Privacy Policy</a>
+                                <a href="">Terms & conditions</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-12 mb-3 ms-sm-0">
+                            <h5 class="footer-header">Download our app</h5>
+                            <div style="width: max-content" class="store-links">
+                                <a href="">
+                                    <img src="assets/images/playstore.webp" alt="">
+                                </a>
+                                <a class="mt-3" href="#">
+                                    <img src="assets/images/appstore.webp" alt="">
+                                    <br>
+                                    <p class="upcoming text-right text-white text-sm">( upcoming )</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-0 mt-sm-2 text-center">
+                            <p class="footer-copyright">2022 © All rights reserved by Mubarok.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer end -->
+        
+            <!-- smooth scroll start -->
+        
+            <section>
+                <button onclick="window.scroll({top: 0})" class="scroll-up">
+                    <svg width="49.762" height="49.762" viewBox="0 0 49.762 49.762">
+                        <g id="Group_315" data-name="Group 315" transform="translate(-1765 -8083)">
+                            <rect id="Rectangle_79" data-name="Rectangle 79" width="48.762" height="48.762" rx="10"
+                                transform="translate(1765.5 8083.5)" fill="#f28020" stroke-miterlimit="10" stroke-width="1" />
+                            <g id="Group_314" data-name="Group 314" transform="translate(1780.251 8102.978)">
+                                <line id="Line_17" data-name="Line 17" x1="9.752" y1="9.752" transform="translate(9.752 0)"
+                                    fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+                                <line id="Line_18" data-name="Line 18" y1="9.752" x2="9.752" transform="translate(0 0)"
+                                    fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </section>
+        
+            <!-- End Footer -->
+        
+            <input type="hidden" id="dateTime" value="2022, 04, 17, 11, 13">
+        
+            <!-- script start -->
+        
+            <script src="./assets/js/jquery-3.3.1.min.js"></script>
+                <script src="./assets/js/bootstrap.min.js"></script>
+                <script src="./assets/js/jquery-ui.min.js"></script>
+                <script src="./assets/js/owl.carousel.min.js"></script>
+                <script src="./assets/js/jquery-ui.min.js"></script>
+                <script src="./assets/js/bootstrap-select.min.js"></script>
+                <script src="./assets/js/jquery.countup.min.js"></script>
+                <script src="./assets/js/jquery.waypoint.js"></script>
+                <script src="./assets/js/sweetalert2.min.js"></script>
+                <script src="./assets/js/function.js"></script>
+    <!-- load additional javascripts from particular pages -->
+        <script>
+        $('.alert').delay(1500).fadeOut('slow');
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                //
+            });
+    </script>
+    <script>
+        // Input money start
+
+        $("#slideMoney, #inputMoney").on("input", function () {
+            var changeSlideValue =
+                this.id === "slideMoney" ? "#inputMoney" : "#slideMoney";
+            $(changeSlideValue).val(this.value);
+        });
+
+        // Input money end
+
+        // Video stop start
+
+        $("#videoModal").on("hidden.bs.modal", function () {
+            $("#videoModal iframe").attr(
+                "src",
+                $("#videoModal iframe").attr("src")
+            );
+        });
+
+        // Video stop End
+
+        // partners company owl carousel start
+
+        $(".partners-company").owlCarousel({
+            navText: [
+                '<img src="web/js/assets/images/svg/left-arrow.svg" width="30">',
+                '<img src="web/js/assets/images/svg/right-arrow.svg" width="30">',
+            ],
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                575: {
+                    items: 2,
+                },
+                767: {
+                    items: 3,
+                },
+                991: {
+                    items: 5,
+                },
+                1200: {
+                    items: 6,
+                },
+            },
+        });
+
+        // partners company owl carousel end
+
+        // client review owl carousel start
+
+        $(".client-reviews").owlCarousel({
+            navText: [
+                '<img src="web/js/assets/images/svg/left-arrow.svg" width="30">',
+                '<img src="web/js/assets/images/svg/right-arrow.svg" width="30">',
+            ],
+            loop: true,
+            margin: 5,
+            nav: true,
+            dots: false,
+            center: true,
+            autoWidth: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    autoWidth: false,
+                },
+                1201: {
+                    items: 3,
+                },
+            },
+        });
+        // client review owl carousel end
+
+        // print media carousel
+
+        $(".print-media-carousel").owlCarousel({
+            navText: [
+                '<img src="web/js/assets/images/svg/left-arrow.svg" width="30">',
+                '<img src="web/js/assets/images/svg/right-arrow.svg" width="30">',
+            ],
+            margin: 10,
+            nav: false,
+            dots: false,
+            loop: true,
+            autoplay: true,
+            slideTransition: "linear",
+            autoplayTimeout: 3500,
+            autoplaySpeed: 3500,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                575: {
+                    items: 2,
+                },
+                767: {
+                    items: 3,
+                },
+                991: {
+                    items: 5,
+                },
+                1200: {
+                    items: 6,
+                },
+            },
+        });
+        // print media cariusel
+
+        // counter
+
+        $(".counter").countUp();
+    </script>
+
+    <!-- script end -->
+
+    </body>
+
+
+<!-- Mirrored from instantsalaries.com/terms&condition by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Apr 2022 05:10:15 GMT -->
+</html>

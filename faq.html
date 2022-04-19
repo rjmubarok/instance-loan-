@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Instance loan</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl-carousel/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="./assets/css/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- ======= nav start ======= -->
+    <nav class="is-navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo.png" alt="logo.webp" /></a>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center navigation-links">
+                    <div class="d-none d-lg-inline-block">
+                        <a class=" apply-salary-btn" href="login.html">Apply
+                            Salary
+                            Loan </a>
+                        <a href="tel:+01781991183" class="call-us">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <path id="phone-call"
+                                    d="M14.051,5A3.874,3.874,0,0,1,18.1,8.913M14.5,1a7.755,7.755,0,0,1,7.612,7.588m-.957,7.626v2.867a1.914,1.914,0,0,1-2.087,1.911A18.972,18.972,0,0,1,10.8,18.058a18.653,18.653,0,0,1-5.745-5.734A18.889,18.889,0,0,1,2.12,4.039,1.913,1.913,0,0,1,4.025,1.956H6.9A1.914,1.914,0,0,1,8.812,3.6a12.251,12.251,0,0,0,.67,2.685A1.909,1.909,0,0,1,9.052,8.3L7.836,9.515a15.305,15.305,0,0,0,5.745,5.734L14.8,14.035a1.918,1.918,0,0,1,2.02-.43,12.313,12.313,0,0,0,2.691.669,1.912,1.912,0,0,1,1.647,1.94Z"
+                                    transform="translate(-2.112 -1)" fill="#595959" />
+                            </svg>
+                            <span> 01781991183</span>
+                        </a>
+                    </div>
+                    <div class="d-none d-sm-inline-block">
+                        <a class="navigation-login-link" href="">
+                            <svg width="28" height="28" viewBox="0 0 28 28">
+                                <path id="User"
+                                    d="M182,1243a14,14,0,1,0,14,14,14,14,0,0,0-14-14Zm-12.091,14a12.091,12.091,0,1,1,21.594,7.458,12.231,12.231,0,0,0-6.038-4.7,6.055,6.055,0,0,0,1.625-4.187c0-3.157-2.284-5.727-5.091-5.727s-5.091,2.571-5.091,5.727a6.025,6.025,0,0,0,1.753,4.314,11.338,11.338,0,0,0-5.918,4.894,12.058,12.058,0,0,1-2.835-7.776Zm12.409,2.227c-.349,0-.7.026-1.041.057a3.73,3.73,0,0,1-2.459-3.716c0-2.107,1.425-3.818,3.182-3.818s3.182,1.712,3.182,3.818a3.777,3.777,0,0,1-2.34,3.684C182.668,1259.24,182.494,1259.227,182.318,1259.227Zm-8.156,6.968a9.311,9.311,0,0,1,7.02-4.976,4.931,4.931,0,0,0,.817.077,4.441,4.441,0,0,0,1.053-.121,9.776,9.776,0,0,1,7.115,4.722A12.046,12.046,0,0,1,174.163,1266.195Z"
+                                    transform="translate(-168 -1243)" fill="#595959" fill-rule="evenodd" />
+                            </svg>
+                            <span class="pl-1">Login / Register</span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="sidebar-menu">
+                    <button onclick="openSideMenu()"
+                        class="hamburger-menu"><span></span><span></span><span></span></button>
+                </div>
+            </div>
+        </div>
+        <!-- side nav start -->
+        <div id="mySidenav" class="sidenav">
+            <div onclick="closeSideMenu()" class="extra-space-navbar"></div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSideMenu()">
+                <svg class="pr-1" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
+                    <g id="Close" transform="translate(8.5 14.5)">
+                        <rect id="Area" width="38" height="38" rx="19" transform="translate(-8 -14)" fill="#fff"
+                            stroke="#efefef" stroke-miterlimit="10" stroke-width="1" />
+                        <line id="Line_1" data-name="Line 1" x2="12.667" y2="12.667" transform="translate(4.667 -1.333)"
+                            fill="none" stroke="red" stroke-miterlimit="10" stroke-width="2" />
+                        <line id="Line_3" data-name="Line 3" y1="12.667" x2="12.667" transform="translate(4.667 -1.333)"
+                            fill="none" stroke="red" stroke-miterlimit="10" stroke-width="2" />
+                    </g>
+                </svg>
+                Close
+            </a>
+            <div class="side-menu-links">
+                <div class="d-lg-none">
+                    <a href="tel:+01781991183">
+                        Call us at :
+                        <span class="phone-number">01781991183</span>
+                    </a>
+                </div>
+                <div class="d-md-none">
+                    <a href="login.html">Apply Salary
+                        Loan</a>
+                </div>
+
+                <a href="faq.html">FAQ</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms%26condition.html">Terms & conditions</a>
+                <a class="border-0" href="about-us.html">About Us</a>
+                <div class="d-sm-none">
+                    <a href="login.html" class="sidebar-login-link">
+                        Login / Registration
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <p>Find us on</p>
+                <div class=" social-icons">
+                    <a target="_blank" href="">
+                        <svg id="facebook-box-fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path id="Path_2134" data-name="Path 2134" d="M0,0H24V24H0Z" fill="none" />
+                            <path id="Path_2135" data-name="Path 2135"
+                                d="M15.4,21V14.034h2.333l.349-2.708H15.4V9.6c0-.784.218-1.319,1.342-1.319h1.434V5.857a19.191,19.191,0,0,0-2.09-.107,3.263,3.263,0,0,0-3.482,3.58v2H10.268v2.708h2.338V21H4a1,1,0,0,1-1-1V4A1,1,0,0,1,4,3H20a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1Z"
+                                fill="#282828" />
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/company/instant-salaries/">
+                        <svg id="linkedin-box-fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path id="Path_2138" data-name="Path 2138" d="M0,0H24V24H0Z" fill="none" />
+                            <path id="Path_2139" data-name="Path 2139"
+                                d="M18.335,18.339H15.67V14.162c0-1-.02-2.278-1.39-2.278-1.389,0-1.6,1.084-1.6,2.2v4.25H10.013V9.75h2.56v1.17h.035a2.812,2.812,0,0,1,2.528-1.387c2.7,0,3.2,1.778,3.2,4.091v4.715ZM7,8.575A1.548,1.548,0,1,1,8.551,7.028,1.546,1.546,0,0,1,7,8.575Zm1.336,9.764H5.666V9.75H8.34v8.589ZM19.67,3H4.329A1.312,1.312,0,0,0,3,4.3V19.7A1.312,1.312,0,0,0,4.328,21H19.666A1.317,1.317,0,0,0,21,19.7V4.3A1.317,1.317,0,0,0,19.666,3h0Z"
+                                fill="#282828" />
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCOyf5V53y5yQ5s2uz1hCYSQ">
+                        <svg width="35" height="35" viewBox="0 0 48 48">
+                            <g id="Group_296" data-name="Group 296" transform="translate(-1582.83 -7389)">
+                                <path id="Icon_awesome-youtube" data-name="Icon awesome-youtube"
+                                    d="M28.244,7.556a3.49,3.49,0,0,0-2.456-2.471C23.623,4.5,14.937,4.5,14.937,4.5s-8.685,0-10.851.584A3.49,3.49,0,0,0,1.63,7.556a36.611,36.611,0,0,0-.58,6.729,36.611,36.611,0,0,0,.58,6.729,3.438,3.438,0,0,0,2.456,2.432c2.166.584,10.851.584,10.851.584s8.685,0,10.851-.584a3.438,3.438,0,0,0,2.456-2.432,36.611,36.611,0,0,0,.58-6.729,36.611,36.611,0,0,0-.58-6.729ZM12.1,18.414V10.155l7.259,4.13L12.1,18.414Z"
+                                    fill="#282828" transform="translate(1591.42 7399)" fill="red" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <br>
+                <p>Download our app</p>
+                <div class="dwn-app-side-image">
+                    <a target="_blank"
+                        href="https://play.google.com/store/apps/details?id=com.instantsalaries.aleshasolutions">
+                        <img src="assets/images/playstore.webp" alt="">
+                    </a>
+                </div>
+                <br>
+            </div>
+        </div>
+        <!-- side nav end -->
+    </nav>
+    <!-- ======= nav end ======= -->
+    <!-- header start -->
+    <header>
+        <div class="content-header">
+            <h1>Frequently Asked Questions</h1>
+            <span><a href="index.html">Home</a> / faqs</span>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- header end -->
+
+
+    <main id="main">
+        <!-- main start -->
+
+        <main>
+            <section class="faqs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-4">
+                            <div class="faqs-menu">
+                                <h3>About instantsalaries</h3>
+                                <div class="faqs-menu-link md-display-hide">
+                                    <a class="active" href="#process">Application Process</a>
+                                    <a href="#eligibility">Eligibility</a>
+                                    <a href="#security">Security</a>
+                                    <a href="#status">Status of Application</a>
+                                    <a href="#fees">Fees</a>
+                                    <a href="#getmoney">Get Money and Repay</a>
+                                    <a href="#support">Support</a>
+                                </div>
+                                <div class="owl-carousel faq-menu-carousel sm-display-block">
+                                    <div class="item faqs-menu-link">
+                                        <a class="active" href="#process">Application Process</a>
+                                    </div>
+                                    <div class="item faqs-menu-link">
+                                        <a href="#eligibility">Eligibility</a>
+                                    </div>
+                                    <div class="item faqs-menu-link">
+                                        <a href="#security">Security</a>
+                                    </div>
+                                    <div class="item faqs-menu-link">
+                                        <a href="#status">Status of Application</a>
+                                    </div>
+                                    <div class="item faqs-menu-link">
+                                        <a href="#fees">Fees</a>
+                                    </div>
+                                    <div class="item faqs-menu-link">
+                                        <a href="#getmoney">Get Money and Repay</a>
+                                    </div>
+                                    <div class="item faqs-menu-link">
+                                        <a href="#support">Support</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-8">
+                            <div class="faqs-details">
+                                <h3>Features</h3>
+                                <div id="process" class="faq-content active">
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.?</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus excepturi a eum ex vero dicta et error. Enim excepturi vel, modi sed molestiae odio fugiat quis, aut cupiditate deleniti cumque.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.?</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem in modi iste mollitia itaque dolorem possimus. Dolor, voluptate optio.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.?</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quia necessitatibus veritatis sequi, illo neque nemo harum ad iure, perspiciatis veniam accusantium repellat cupiditate praesentium sed? At odit perferendis in..
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="eligibility" class="faq-content">
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.?</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ab unde nam nesciunt, obcaecati deserunt reprehenderit est cupiditate sed totam ipsam? Ad, exercitationem nam. Quod iste libero nam facilis eos?
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.?</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae accusamus nostrum asperiores consequuntur molestiae tenetur earum error nemo temporibus aliquid!
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.?</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, nulla.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="security" class="faq-content">
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.?</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit quia veniam hic aspernatur labore ipsam nulla voluptate aut officia!
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.?</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequatur praesentium nam molestias nulla deleniti quia magni modi corporis adipisci.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="status" class="faq-content">
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.?</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem aperiam iure quam nam eveniet at sed possimus provident inventore consectetur laborum esse, earum debitis laboriosam unde aliquam ipsum veniam reiciendis!
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.?</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, quisquam praesentium. Amet, pariatur. Est harum officiis, earum praesentium alias non. Voluptatem sed voluptas accusantium tempore qui delectus eligendi! Eius, atque.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.?</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio quisquam et hic, laboriosam magnam fuga quo ullam vitae qui mollitia ea dolore vel dicta facere quod excepturi quasi ut ad.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h6>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio quisquam et hic, laboriosam magnam fuga quo ullam vitae qui mollitia ea dolore vel dicta facere quod excepturi quasi ut ad.
+                                            </h6>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio quisquam et hic, laboriosam magnam fuga quo ullam vitae qui mollitia ea dolore vel dicta facere quod excepturi quasi ut ad.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="fees" class="faq-content">
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.?</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+
+                                        <div class="expanded-details">
+                                            <h6>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio quisquam et hic, laboriosam magnam fuga quo ullam vitae qui mollitia ea dolore vel dicta facere quod excepturi quasi ut ad.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.?</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio quisquam et hic, laboriosam magnam fuga quo ullam vitae qui mollitia ea dolore vel dicta facere quod excepturi quasi ut ad.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="getmoney" class="faq-content">
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.?</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio quisquam et hic, laboriosam magnam fuga quo ullam vitae qui mollitia ea dolore vel dicta facere quod excepturi quasi ut ad.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit.?</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio quisquam et hic, laboriosam magnam fuga quo ullam vitae qui mollitia ea dolore vel dicta facere quod excepturi quasi ut ad.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="expanded faq-details">
+                                        <div class="expanded-topic">
+                                            <h5>Lorem ipsum dolor sit, amet consectetur adipisicing.</h5>
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="expanded-details">
+                                            <h6>
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore facilis, repudiandae alias placeat, minus delectus nobis modi ratione architecto velit illo laboriosam id! Libero architecto autem rerum. Earum, quisquam blanditiis? Sit, dicta nulla. Voluptatem, fugit praesentium voluptatum dignissimos laudantium eum itaque earum, voluptas exercitationem placeat beatae incidunt quo suscipit consequuntur?
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="support" class="faq-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- main end -->
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-2 mb-3 ms-sm-0">
+                    <div class="footer-logo">
+                        <img src="./assets/images/logo.png" alt="">
+                        
+                            
+                    </div>
+                    <h5 class="footer-header mt-4">Address</h5>
+                    <p class="footer-content">mymensing bhalokber shohagi ishawargonj
+                        mymensingh,
+                        Bangladesh.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-3 ms-sm-0">
+                    <h5 class="footer-header">Follow Us</h5>
+                    <div class="">
+                        <a target=" _blank" href="https://www.facebook.com/rjmubarok/">
+                           
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/rjmubarok">
+                           
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                        <a target="_blank" href="https://www.youtube.com/channel/rjmubarok">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="footer-content mt-2 mt-sm-5"><strong>Email:</strong> mubarkhossen2003@gmail.com</p>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 mb-3 ms-sm-0">
+                    <h5 class="footer-header">Links</h5>
+                    <div class="footer-links">
+                        <a href="">Contact</a>
+                        <a href="">FAQ</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Terms & conditions</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 mb-3 ms-sm-0">
+                    <h5 class="footer-header">Download our app</h5>
+                    <div style="width: max-content" class="store-links">
+                        <a href="">
+                            <img src="assets/images/playstore.webp" alt="">
+                        </a>
+                        <a class="mt-3" href="#">
+                            <img src="assets/images/appstore.webp" alt="">
+                            <br>
+                            <p class="upcoming text-right text-white text-sm">( upcoming )</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 mt-0 mt-sm-2 text-center">
+                    <p class="footer-copyright">2022 © All rights reserved by Mubarok.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- smooth scroll start -->
+
+    <section>
+        <button onclick="window.scroll({top: 0})" class="scroll-up">
+            <svg width="49.762" height="49.762" viewBox="0 0 49.762 49.762">
+                <g id="Group_315" data-name="Group 315" transform="translate(-1765 -8083)">
+                    <rect id="Rectangle_79" data-name="Rectangle 79" width="48.762" height="48.762" rx="10"
+                        transform="translate(1765.5 8083.5)" fill="#f28020" stroke-miterlimit="10" stroke-width="1" />
+                    <g id="Group_314" data-name="Group 314" transform="translate(1780.251 8102.978)">
+                        <line id="Line_17" data-name="Line 17" x1="9.752" y1="9.752" transform="translate(9.752 0)"
+                            fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+                        <line id="Line_18" data-name="Line 18" y1="9.752" x2="9.752" transform="translate(0 0)"
+                            fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+                    </g>
+                </g>
+            </svg>
+        </button>
+    </section>
+
+    <!-- End Footer -->
+
+    <input type="hidden" id="dateTime" value="2022, 04, 17, 11, 13">
+
+    <!-- script start -->
+
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/jquery-ui.min.js"></script>
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/jquery-ui.min.js"></script>
+        <script src="./assets/js/bootstrap-select.min.js"></script>
+        <script src="./assets/js/jquery.countup.min.js"></script>
+        <script src="./assets/js/jquery.waypoint.js"></script>
+        <script src="./assets/js/sweetalert2.min.js"></script>
+        <script src="./assets/js/function.js"></script>
+    <script>
+        // faq menu content change
+
+        $(document).ready(function () {
+            $('.faqs-menu-link > a').click(function (event) {
+                event.preventDefault();
+                var activeContent = $('.faqs-menu-link > a.active').attr('href');
+                var activeMenu = $('.faqs-menu-link > a.active');
+                activeMenu.removeClass('active');
+                $(this).addClass('active');
+                $(activeContent).removeClass('active');
+                var targetContent = $(this).attr('href');
+                $(targetContent).addClass('active');
+            });
+
+            // small menu owl carousel
+
+            $('.faq-menu-carousel').owlCarousel({
+                loop: true,
+                margin: 5,
+                nav: false,
+                dots: false,
+                center: true,
+                items: 2,
+            });
+        });
+    </script>
+    <script>
+        $('.alert').delay(1500).fadeOut('slow');
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //
+        });
+    </script>
+    <script>
+        // Input money start
+
+        $("#slideMoney, #inputMoney").on("input", function () {
+            var changeSlideValue =
+                this.id === "slideMoney" ? "#inputMoney" : "#slideMoney";
+            $(changeSlideValue).val(this.value);
+        });
+
+        // Input money end
+
+        // Video stop start
+
+        $("#videoModal").on("hidden.bs.modal", function () {
+            $("#videoModal iframe").attr(
+                "src",
+                $("#videoModal iframe").attr("src")
+            );
+        });
+
+        // Video stop End
+
+        // partners company owl carousel start
+
+        $(".partners-company").owlCarousel({
+            navText: [
+                '<img src="web/js/assets/images/svg/left-arrow.svg" width="30">',
+                '<img src="web/js/assets/images/svg/right-arrow.svg" width="30">',
+            ],
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                575: {
+                    items: 2,
+                },
+                767: {
+                    items: 3,
+                },
+                991: {
+                    items: 5,
+                },
+                1200: {
+                    items: 6,
+                },
+            },
+        });
+
+        // partners company owl carousel end
+
+        // client review owl carousel start
+
+        $(".client-reviews").owlCarousel({
+            navText: [
+                '<img src="web/js/assets/images/svg/left-arrow.svg" width="30">',
+                '<img src="web/js/assets/images/svg/right-arrow.svg" width="30">',
+            ],
+            loop: true,
+            margin: 5,
+            nav: true,
+            dots: false,
+            center: true,
+            autoWidth: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    autoWidth: false,
+                },
+                1201: {
+                    items: 3,
+                },
+            },
+        });
+        // client review owl carousel end
+
+        // print media carousel
+
+        $(".print-media-carousel").owlCarousel({
+            navText: [
+                '<img src="web/js/assets/images/svg/left-arrow.svg" width="30">',
+                '<img src="web/js/assets/images/svg/right-arrow.svg" width="30">',
+            ],
+            margin: 10,
+            nav: false,
+            dots: false,
+            loop: true,
+            autoplay: true,
+            slideTransition: "linear",
+            autoplayTimeout: 3500,
+            autoplaySpeed: 3500,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                575: {
+                    items: 2,
+                },
+                767: {
+                    items: 3,
+                },
+                991: {
+                    items: 5,
+                },
+                1200: {
+                    items: 6,
+                },
+            },
+        });
+        // print media cariusel
+
+        // counter
+
+        $(".counter").countUp();
+    </script>
+
+    <!-- script end -->
+
+</body>
+
+
+<!-- Mirrored from instantsalaries.com/faq by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Apr 2022 05:10:15 GMT -->
+
+</html>

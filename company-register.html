@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Instance loan</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl-carousel/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="./assets/css/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <!--main content start -->
+        <main class="py-4">
+            	<section class="registration authentication-form">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="web/js/assets/images/logo.webp" alt="" /></a>
+				<span class="breadcrumb-is"><a href="index.html">home</a> / company-registration</span>
+			</div>
+
+			<!-- register from start -->
+
+			<form method="POST" action="https://instantsalaries.com/register">
+				<input type="hidden" name="_token" value="AqwK0El13J58e4aVUyyFaVDC0XT6fDK0Ltsg4TUR">                <h5 class="form-label mt-4"><span> Company Registration </span></h5>
+                <input type="hidden" name="partner" value="yes">
+                <div class="input-area">
+					<label for="">Full name</label>
+					<input type="text" name="name" class="form-control " value="" placeholder="Full name" required/>
+									</div>
+				<div class="input-area">
+					<label for="">Company name</label>
+					<input type="text" name="company_name" class="form-control " value="" placeholder="company name" required/>
+									</div>
+				<div class="input-area">
+					<label for="">Email</label>
+					<input type="email" name="email" class="form-control " value="" placeholder="company email address" required/>
+									</div>
+				<div class="input-area">
+					<label for="">Phone</label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon1">
+								<img src="web/js/assets/images/flag.webp" alt="" />+88
+                            </span>
+						</div>
+						<input type="number" name="contact_no" placeholder="Mobile Number" required class="form-control " value=""/>
+                                            </div>
+				</div>
+				<div class="input-area password-visible">
+					<label for="">Password</label>
+					<input type="password" name="password" class="form-control " name="password" required autocomplete="new-password" placeholder="Minimum 8 character" />
+										<div class="show-hide">
+						<i class="show fa fa-eye" aria-hidden="true"></i>
+						<i class="hide fa fa-eye-slash" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="input-area password-visible">
+					<label for="password-confirm">Confirm Password</label>
+					<input type="password" name="password_confirmation" required autocomplete="new-password" placeholder="Minimum 8 character" />
+					<div class="show-hide">
+						<i class="show fa fa-eye" aria-hidden="true"></i>
+						<i class="hide fa fa-eye-slash" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="remember-forgot">
+					<div>
+						<input type="checkbox" />Send me offers and discounts by email
+					</div>
+				</div>
+				<button type="submit" class="default-btn">Registration</button>
+                <div class="" style="margin-top: 10px">
+					do you want to sign up as a user ?
+					<a href="register.html" class="text-primary">user Sign Up</a>
+				</div>
+			</form>
+
+			<!-- register from end -->
+
+			<!-- register input footer form start -->
+
+			<div class="input-footer">
+				<h6>
+					By clicking Continue Sign up, I agree to instant salaries
+					<a href="terms%26condition.html">T&C</a> and
+					<a href="privacy-policy.html">Privacy Policy</a>
+				</h6>
+				<h6>
+					Do you have a company account ?
+					<a href="login.html">Log in</a>
+				</h6>
+			</div>
+
+			<!-- regiser input footer end -->
+
+			<!-- register content image start-->
+
+			<div class="content-image">
+				<img src="web/js/assets/images/signup.webp" alt="" />
+			</div>
+
+			<!-- register content image end-->
+		</div>
+	</section>
+        </main>
+    <!--main content start -->
+
+    <!-- script start -->
+
+
+	<script src="./assets/js/jquery-3.3.1.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="./assets/js/jquery-ui.min.js"></script>
+	<script src="./assets/js/owl.carousel.min.js"></script>
+	<script src="./assets/js/jquery-ui.min.js"></script>
+	<script src="./assets/js/bootstrap-select.min.js"></script>
+	<script src="./assets/js/jquery.countup.min.js"></script>
+	<script src="./assets/js/jquery.waypoint.js"></script>
+	<script src="./assets/js/sweetalert2.min.js"></script>
+	<script src="./assets/js/function.js"></script>
+  
+    <!-- load additional javascripts from particular pages -->
+	<script>
+        /***
+         * Referral Script
+         * Referral won't work with out that
+         * This should load on all frontend page
+         ***/
+        const queryParams = Object.fromEntries(
+            new URLSearchParams(window.location.search).entries()
+        );
+
+        if (queryParams.rid) {
+            Cookies.set('rid', queryParams.rid, {
+                expires: 3 // in day
+            })
+        }
+
+        /*** Referral Script END ***/
+
+        // // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+    
+    </div>
+</body>
+
+<!-- Mirrored from instantsalaries.com/company-register by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Apr 2022 05:10:22 GMT -->
+</html>
